@@ -1,0 +1,53 @@
+/** GENERAL **/
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    margin: autoZ;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/** HEADER **/
+
+header {
+    flex-direction: column;
+}
+
+h1 {
+    font-family: "Splash", "cursive", sans-serif;
+    font-size: 46px;
+}
+
+nav {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    gap: 2%;
+}
+
+li:after {
+  display:block;
+  content: "";
+  border-bottom: solid 2px black;  
+  transform: scaleX(0);  
+  transition: all ease-in-out 0.2s;
+}
+
+li:hover:after {
+    transform: scaleX(1);
+}
+
+li:after {
+    transform-origin: 0% 50%;
+}
