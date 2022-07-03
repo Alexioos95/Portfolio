@@ -1,53 +1,131 @@
 /** GENERAL **/
-
 * {
     box-sizing: border-box;
+    font-family: "EB Garamond", sans-serif;
 }
-
-.container {
-    margin: autoZ;
-}
-
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+}
+body {
+    max-width: 1440px;
+    padding: 0px 40px;
+    margin: auto;
+}
+a {
+    text-decoration: none;
+    color: black;
 }
 
 /** HEADER **/
-
 header {
     flex-direction: column;
 }
-
 h1 {
     font-family: "Splash", "cursive", sans-serif;
     font-size: 46px;
 }
 
+/** NAV **/
 nav {
     width: 100%;
 }
-
 ul {
     display: flex;
     list-style: none;
     padding: 0;
     gap: 2%;
 }
+li {
+    font-size: 20px;
+    font-weight: 700;
+}
 
-li:after {
+/** NAV ANIMATION **/
+.li-not-active:after {
   display:block;
   content: "";
-  border-bottom: solid 2px black;  
+  border-bottom: solid 3px black;  
   transform: scaleX(0);  
   transition: all ease-in-out 0.2s;
 }
-
-li:hover:after {
+.li-not-active:hover:after {
     transform: scaleX(1);
 }
-
-li:after {
+.li-not-active:after {
     transform-origin: 0% 50%;
+}
+.li-active {
+    border-bottom: solid 3px black;  
+}
+
+/** DESCRIPTION **/
+div {
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+}
+fieldset {
+    display: flex;
+    justify-content: center;
+    gap: 3%;
+    text-align: left;
+    width: 80%;
+    padding: 11px 10%;
+}
+legend {
+    padding: 0px 5px 0px 5px;
+}
+/** CONTACT BUTTONS **/
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 40px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 0;
+    transition: all 0.3s ease;
+}
+.button:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    transition: all 0.3s ease;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    background: white;
+}
+.button:hover:after {
+    width: 100%;
+}
+.text-after-hover {
+    display: none;
+}
+.button:hover .icon-before-hover {
+    display: none;
+}
+.button:hover .text-after-hover {
+    display: inherit;
+}
+.button-blue {
+    color: white;
+    background: rgb(27, 79, 82);
+    border: 2px solid rgb(27, 79, 82);
+}
+.button-blue:hover {
+    color: rgb(27, 79, 82);
+}
+.button-yellow {
+    color: black;
+    background:rgb(255, 209, 25);
+    border: 2px solid rgb(255, 209, 25);
+}
+.button-yellow:hover {
+    color: rgb(255, 209, 25);
 }

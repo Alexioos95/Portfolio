@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Alexis PAYEN - Développeur Web</title>
+        <title>Alexis Payen - Développeur Web</title>
         <meta name="description" content="Alexis Payen, Développeur Web résidant en Île-de-France, prêt a travailler pour vous."/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <!--Normalize-->
@@ -14,6 +14,8 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
         <!--Font Splash-->
         <link href="https://fonts.googleapis.com/css2?family=Splash&display=swap" rel="stylesheet"/>
+        <!--Font EB Garamond-->
+        <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
         <!--My CSS-->
         <link rel="stylesheet" type="text/css" href="style.css"/>
     </head>
@@ -23,19 +25,54 @@
             <h1>Alexis Payen</h1>
             <nav>
                 <ul class="center">
-                    <li>Portfolio</li>
-                    <li>CV</li>
+                    <li class="li-active"><a href="#">Portfolio</a></li>
+                    <li class="li-not-active"><a href="#">CV</a></li>
                 </ul>
             </nav>
         </header>
 
         <main>
-            <div>
-                <p>Bonjour, je m'appelle Alexis Payen, et je suis Développeur Web Junior.</p>
+            <!--PRESENTATION + CONTACT-->
+            <div class="center">
+                <p>Je m'appelle Alexis Payen, j'ai 21 ans, et je suis actuellement en formation de Développeur Web chez OpenClassrooms.<br/>
+                Afin de développer mes compétences et valider mon diplôme, je suis à la recherche d'une alternance de 12 mois à partir du Lundi 3 Octobre, en Île-de-France.</p>
+                <p>Vous trouverez sur ce site les projets sur lesquelles j'ai travaillé, que ce soit des projets personnels, des études de cas, ou des projets professionnels.<br/>
+                Mon CV, entièrement intégré via HTML et CSS, est également accessible.</p>
             </div>
+            <div class="center">
+                <fieldset>
+                    <legend>Contact :</legend>
+
+                    <a href="mailto:Alexioos@hotmail.fr">
+                        <div class="button button-blue">
+                            <i class="icon-before-hover fa-solid fa-at"></i>
+                            <p class="text-after-hover">Alexioos@hotmail.fr</p>
+                        </div>
+                    </a>
+                    <a href="tel:+33601891643">
+                        <div class="button button-yellow">
+                            <i class="icon-before-hover fa-solid fa-mobile-screen"></i>
+                            <p class="text-after-hover">06.01.89.16.43</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/alexispayen/">
+                        <div class="button button-blue">
+                            <i class="icon-before-hover fa-brands fa-linkedin"></i>
+                            <p class="text-after-hover">AlexisPayen</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/Alexioos95">
+                        <div class="button button-yellow">
+                            <i class="icon-before-hover fa-brands fa-github"></i>
+                            <p class="text-after-hover">Alexioos95</p>
+                        </div>
+                    </a>
+                </fieldset>
+            </div>
+
+
         </main>
         
         <footer>
-
         </footer>
     </body>
