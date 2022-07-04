@@ -18,6 +18,10 @@ a {
     text-decoration: none;
     color: black;
 }
+p, span {
+    font-size: 18px;
+    font-weight: 500;
+}
 
 /** HEADER **/
 header {
@@ -62,28 +66,27 @@ li {
 }
 
 /** DESCRIPTION **/
-div {
+.description {
     flex-direction: column;
-    font-size: 18px;
-    font-weight: 500;
 }
 fieldset {
     display: flex;
     justify-content: center;
-    gap: 3%;
     text-align: left;
+    gap: 3%;
     width: 80%;
     padding: 11px 10%;
 }
 legend {
     padding: 0px 5px 0px 5px;
 }
+
 /** CONTACT BUTTONS **/
 .button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 160px;
+    width: 155px;
     height: 40px;
     border-radius: 5px;
     position: relative;
@@ -128,4 +131,103 @@ legend {
 }
 .button-yellow:hover {
     color: rgb(255, 209, 25);
+}
+
+/** SLIDER PORTFOLIO **/
+.portfolio {
+    margin: 35px 0px;
+}
+.slides {
+    display: flex;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+.slider {
+    height: 94vh;
+    border-radius: 20px;
+    box-shadow: 0px 3px 14px 0px #787777;
+    overflow: hidden;
+}
+.slide {
+    flex-shrink: 0;
+    width: 100%;
+    transform: scale(1);
+    transform-origin: center center;
+    scroll-snap-align: center;
+}
+.slide-arrow {
+    position: absolute;
+    top: 50%;
+    width: 13px;
+    height: 13px;
+    border: solid black;
+    border-width: 0px 4px 4px 0px;
+}
+.slide-prev {
+    transform: rotate(135deg);
+    left: 2%;
+}
+.slide-next {
+    transform: rotate(-45deg);
+    right: 2%;
+}
+article {
+    height: 94vh;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+/** CARDS PORTFOLIO **/
+.object-fit {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.image-booki {
+    object-position: top left;
+}
+h2, .cards-description {
+    margin-bottom: 0px;
+}
+.cards-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: left;
+    width: 50%;
+    padding: 0px 40px;
+}
+h2 {
+    text-align: center;
+}
+.icons-description {
+    font-size: 25px;
+    margin-top: 20px;
+    gap: 20px;
+    padding-bottom: 10px;   
+}
+.image-www {
+    margin-top: 8px;
+}
+
+/** FOOTER **/
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+footer span {
+    font-size: 15px;
+}
+
+/** MEDIA QUERY TABLETS **/
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        background: red;
+    }
+}
+
+/** MEDIA QUERY PHONES **/
+@media screen and (max-width: 767px) {
+
 }
