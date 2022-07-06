@@ -2,16 +2,18 @@
 * {
     box-sizing: border-box;
 }
+body {
+    font-family: "EB Garamond", sans-serif;
+}
+.container {
+    max-width: 800px;
+    padding: 0px 20px;
+    margin: auto;
+}
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-}
-body {
-    max-width: 1440px;
-    margin: auto;
-    font-family: "EB Garamond", sans-serif;
 }
 a {
     text-decoration: none;
@@ -68,27 +70,18 @@ li {
     border-bottom: solid 3px black;  
 }
 
-/** UPPER DIV **/
-.upper-div {
-    padding: 0px 40px;
-}
-
 /** DESCRIPTION **/
 .description {
     flex-direction: column;
+    align-items: flex-start;
     font-family: "Philosopher", sans-serif;
 }
-fieldset {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    gap: 3%;
-    width: 80%;
-    padding: 11px 10%;
+.description p {
+    margin: 5px 0px;
 }
-legend {
-    padding: 0px 4px;
-    font-family: "Philosopher", sans-serif;
+.contact {
+    justify-content: space-between;
+    margin: 20px 0px;
 }
 
 /** CONTACT BUTTONS **/
@@ -148,7 +141,7 @@ legend {
     margin: 35px 0px;
 }
 .slider {
-    height: 100vh;
+    height: 91vh;
     border-radius: 20px;
     box-shadow: 0px 3px 14px 0px #787777;
     overflow: hidden;
@@ -183,7 +176,7 @@ legend {
     right: 2%;
 }
 article {
-    height: 100vh;
+    height: 91vh;
     margin-bottom: 20px;
     border-radius: 20px;
 }
@@ -202,8 +195,6 @@ h2, .cards-description {
 .cards-text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    text-align: left;
     width: 50%;
     padding: 0px 40px;
 }
@@ -230,20 +221,9 @@ footer span {
     font-size: 15px;
 }
 
-@media screen and (max-width: 1440px) {
-    .slider, article {
-        border-radius: 0;
-    }
-}
-
-/** MEDIA QUERY TABLETS **/
-@media screen and (min-width: 768px) and (max-width: 992px) {
+/** MEDIA QUERY **/
+@media screen and (min-width: 768px) and (max-width: 816px) {
     body {
         background: red;
     }
-}
-
-/** MEDIA QUERY PHONES **/
-@media screen and (max-width: 767px) {
-
 }
