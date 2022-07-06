@@ -31,7 +31,7 @@ header {
     flex-direction: column;
 }
 h1 {
-    font-family: "Splash", "cursive", sans-serif;
+    font-family: "Splash", sans-serif;
     font-size: 46px;
 }
 
@@ -87,8 +87,8 @@ fieldset {
     padding: 11px 10%;
 }
 legend {
-    font-family: "Philosopher", sans-serif;
     padding: 0px 4px;
+    font-family: "Philosopher", sans-serif;
 }
 
 /** CONTACT BUTTONS **/
@@ -148,7 +148,7 @@ legend {
     margin: 35px 0px;
 }
 .slider {
-    height: 94vh;
+    height: 100vh;
     border-radius: 20px;
     box-shadow: 0px 3px 14px 0px #787777;
     overflow: hidden;
@@ -160,8 +160,8 @@ legend {
     scroll-snap-type: x mandatory;
 }
 .slide {
-    flex-shrink: 0;
     width: 100%;
+    flex-shrink: 0;
     transform: scale(1);
     transform-origin: center center;
     scroll-snap-align: center;
@@ -183,7 +183,7 @@ legend {
     right: 2%;
 }
 article {
-    height: 94vh;
+    height: 100vh;
     margin-bottom: 20px;
     border-radius: 20px;
 }
@@ -228,6 +228,12 @@ footer {
 }
 footer span {
     font-size: 15px;
+}
+
+@media screen and (max-width: 1440px) {
+    .slider, article {
+        border-radius: 0;
+    }
 }
 
 /** MEDIA QUERY TABLETS **/
