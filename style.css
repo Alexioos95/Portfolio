@@ -33,8 +33,9 @@ header {
     flex-direction: column;
 }
 h1 {
-    font-family: "Splash", sans-serif;
-    font-size: 46px;
+    font-family: "The Nautigal", sans-serif;
+    font-size: 70px;
+    margin: 15px 0px;
 }
 
 /** NAV **/
@@ -110,14 +111,11 @@ li {
 .button:hover:after {
     width: 100%;
 }
-.text-after-hover {
-    display: none;
-}
-.button:hover .icon-before-hover {
+.text-after-hover, .text-phone, .button:hover .icon-before-hover {
     display: none;
 }
 .button:hover .text-after-hover {
-    display: inherit;
+    display: initial;
 }
 .button-blue {
     color: white;
@@ -217,8 +215,9 @@ footer span {
     font-size: 15px;
 }
 
-/** MEDIA QUERY **/
+/** MEDIA QUERY BIG PHONES/SMALL TABLETS **/
 @media screen and (max-width: 768px) {
+/** GENERAL **/
     body {
         background: red;
     }
@@ -230,24 +229,54 @@ footer span {
     .upper-div {
         padding: 0px 20px;
     }
+/** CONTACT **/
+    .contact {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 3%;
+    }
+    .contact a {
+        flex: 1 1 30%;
+    }
+    .button {
+        justify-content: center;
+        gap: 3%;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    .button-git {
+        display: none;
+    }
+    .text-phone, .button:hover .icon-before-hover {
+        display: initial;
+    }
+    .button:hover .text-after-hover {
+        display: none;
+    }
+/** SLIDER PORTFOLIO **/
     .slider {
         width: 100%;
         height: 100vh;
         padding: 0;
         border-radius: 0;
     }
+/** CARDS PORTFOLIO **/
     article {
         flex-direction: column;
         width: 100%;
         height: 100vh;
     }
     .object-fit {
-        height: 38%;
+        height: 33%;
         width: 100%;
         object-position: 50% 30%;
     }
+    .image-booki {
+        object-position: top left;
+    }
     .cards-text {
-        height: 62%;
+        height: 67%;
         width: 100%;
     }
     .cards-description {
@@ -256,14 +285,31 @@ footer span {
     }
 }
 
-@media screen and (max-width: 420px) {
+/** MEDIA QUERY PHONES **/
+@media screen and (max-width: 547px) {
+/** GENERAL **/
     body {
         background: white;
     }
+/** CONTACT **/
+    .contact {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .button {
+        width: 100%;
+    }
+    .button-git {
+        display: initial;
+    }
+/** SLIDER PORTFOLIO **/
     .slider {
-        height: 150vh;
+        height: 120vh;
     }
     article {
-        height: 150vh;
+        height: 120vh;
+    }
+    .image-booki {
+        object-position: top left;
     }
 }
