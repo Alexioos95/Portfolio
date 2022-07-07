@@ -212,15 +212,58 @@ h2 {
 footer {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 5px;
 }
 footer span {
     font-size: 15px;
 }
 
 /** MEDIA QUERY **/
-@media screen and (min-width: 768px) and (max-width: 816px) {
+@media screen and (max-width: 768px) {
     body {
         background: red;
+    }
+    .container-tablet {
+        max-width: 1440px;
+        margin: auto;
+        padding: 0;
+    }
+    .upper-div {
+        padding: 0px 20px;
+    }
+    .slider {
+        width: 100%;
+        height: 100vh;
+        padding: 0;
+        border-radius: 0;
+    }
+    article {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+    .object-fit {
+        height: 38%;
+        width: 100%;
+        object-position: 50% 30%;
+    }
+    .cards-text {
+        height: 62%;
+        width: 100%;
+    }
+    .cards-description {
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    body {
+        background: white;
+    }
+    .slider {
+        height: 150vh;
+    }
+    article {
+        height: 150vh;
     }
 }
