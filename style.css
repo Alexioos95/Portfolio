@@ -298,14 +298,14 @@ footer span {
         width: 100%;
     }
     .button-git {
-        display: initial;
+        display: flex;
     }
 /** SLIDER PORTFOLIO **/
     .slider {
-        height: 120vh;
+        height: 105vh;
     }
     article {
-        height: 120vh;
+        height: 105vh;
     }
     .image-booki {
         object-position: top left;
