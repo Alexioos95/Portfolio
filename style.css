@@ -15,6 +15,10 @@ body {
     justify-content: center;
     align-items: center;
 }
+p, span {
+    font-size: 18px;
+    font-weight: 500;
+}
 a {
     text-decoration: none;
     color: black;
@@ -23,11 +27,6 @@ a {
     color: blue;
     text-decoration: underline;
 }
-p, span {
-    font-size: 18px;
-    font-weight: 500;
-}
-
 /** HEADER **/
 header {
     flex-direction: column;
@@ -36,14 +35,13 @@ h1 {
     font-family: "The Nautigal", sans-serif;
     font-size: 70px;
     margin: 15px 0px;
+    white-space: nowrap;
 }
-
 /** NAV **/
 nav {
     width: 100%;
 }
 ul {
-    display: flex;
     list-style: none;
     padding: 0;
     gap: 20px;
@@ -52,13 +50,15 @@ li {
     font-size: 20px;
     font-weight: 700;
 }
-
 /** NAV ANIMATION **/
+.li-active {
+    border-bottom: solid 3px black;  
+}
 .li-not-active:after {
   display:block;
   content: "";
-  border-bottom: solid 3px black;  
-  transform: scaleX(0);  
+  border-bottom: solid 3px black;
+  transform: scaleX(0);
   transition: all ease-in-out 0.2s;
 }
 .li-not-active:hover:after {
@@ -67,10 +67,6 @@ li {
 .li-not-active:after {
     transform-origin: 0% 50%;
 }
-.li-active {
-    border-bottom: solid 3px black;  
-}
-
 /** DESCRIPTION **/
 .description {
     flex-direction: column;
@@ -80,18 +76,15 @@ li {
 .description p {
     margin: 5px 0px;
 }
+/** CONTACT BUTTONS **/
 .contact {
     justify-content: space-between;
-    margin: 20px 0px;
+    margin-top: 20px;
 }
-
-/** CONTACT BUTTONS **/
 .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 155px;
     height: 40px;
+    padding: 0px 3px;
     border-radius: 5px;
     position: relative;
     z-index: 0;
@@ -103,7 +96,6 @@ li {
     z-index: -1;
     transition: all 0.3s ease;
     left: 0;
-    top: 0;
     width: 0;
     height: 100%;
     background: white;
@@ -133,7 +125,6 @@ li {
 .button-yellow:hover {
     color: rgb(255, 209, 25);
 }
-
 /** SLIDER PORTFOLIO **/
 .portfolio {
     margin: 35px 0px;
@@ -191,7 +182,7 @@ h2, .cards-description {
     display: flex;
     flex-direction: column;
     width: 50%;
-    padding: 0px 40px;
+    padding: 10px 40px;
 }
 h2 {
     text-align: center;
@@ -199,28 +190,36 @@ h2 {
 .icons-description {
     font-size: 25px;
     margin-top: 20px;
-    gap: 20px;
-    padding-bottom: 10px;   
+    gap: 20px; 
 }
 .image-www {
     margin-top: 8px;
 }
-
 /** FOOTER **/
 footer {
     display: flex;
     justify-content: space-between;
 }
 footer span {
-    font-size: 15px;
+    font-size: 13px;
 }
+
+/** PAGE CV **/
+
+.download {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 0px 15px;
+    border-radius: 30px;
+    background: rgb(215, 209, 209);
+}
+
+
 
 /** MEDIA QUERY BIG PHONES/SMALL TABLETS **/
 @media screen and (max-width: 768px) {
 /** GENERAL **/
-    body {
-        background: red;
-    }
     .container-tablet {
         max-width: 1440px;
         margin: auto;
@@ -231,10 +230,9 @@ footer span {
     }
 /** CONTACT **/
     .contact {
-        display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 3%;
+        gap: 2.3%;
     }
     .contact a {
         flex: 1 1 30%;
