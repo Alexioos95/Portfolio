@@ -28,21 +28,21 @@
             <nav>
                 <ul class="center">
                     <li class="li-active"><a href="#slide-1">Portfolio</a></li>
-                    <li class="li-not-active"><a href="CV.html">CV</a></li>
+                    <li class="li-not-active"><a href="cv.html">CV</a></li>
                 </ul>
             </nav>
         </header>
 
-        <main class="container container-tablet">
+        <main class="container">
             <!--PRESENTATION + CONTACT-->
             <div class="upper-div">
-                <div class="description center">
+                <div class="index-description center">
                     <p>Je m'appelle Alexis Payen, j'ai 21 ans, et je suis actuellement en formation de Développeur Web chez OpenClassrooms.</p>
                     <p>Afin d'apprendre le métier et obtenir mon diplôme, je suis à la recherche d'une alternance en Île-de-France de 12 mois, à partir du Lundi 3 Octobre.</p>
                     <p>Vous trouverez sur ce site les projets sur lesquels j'ai travaillé, que ce soit des projets personnels, professionnels, ou des études de cas.</p>
                     <p>Mon CV, entièrement intégré via HTML et CSS, est également accessible.</p>
                 </div>
-                <div class="contact center">
+                <div class="index-contact center">
                     <a class="button center button-blue" href="mailto:Alexioos@hotmail.fr">
                         <i class="icon-before-hover fa-solid fa-at"></i>
                         <span class="text-after-hover">Alexioos@hotmail.fr</span>
@@ -53,12 +53,12 @@
                         <span class="text-after-hover">06.01.89.16.43</span>
                         <span class="text-phone">06.01.89.16.43</span>
                     </a>
-                    <a class="button center button-blue" href="https://www.linkedin.com/in/alexispayen/">
+                    <a class="button center button-blue" href="https://www.linkedin.com/in/alexispayen/" target="_blank">
                             <i class="icon-before-hover fa-brands fa-linkedin"></i>
                             <span class="text-after-hover">AlexisPayen</span>
                             <span class="text-phone">AlexisPayen</span>
                     </a>
-                    <a class="button-git button center button-yellow" href="https://github.com/Alexioos95">
+                    <a class="button center button-yellow" href="https://github.com/Alexioos95" target="_blank">
                         <i class="icon-before-hover fa-brands fa-github"></i>
                         <span class="text-after-hover">Alexioos95</span>
                         <span class="text-phone">Alexioos95</span>
@@ -67,18 +67,17 @@
             </div>
 
             <!--PORTFOLIO-->
-            <div class="portfolio">
+            <div class="portfolio container-phone">
                 <div class="slider">
                     <div class="wrap-slides">
                         <!--CARD : BOOKI-->
                         <article id="slide-1" class="center">
                             <img class="object-fit image-booki" src="images/Booki.png" alt="Site Booki, Projet de formation OpenClassrooms"/>
                             <div class="cards-text">
-                                <h2>Booki</h2>
+                                <h2 class="h2-cards">Booki</h2>
                                 <p class="cards-description">Booki est le second des sept projets a réaliser lors de la formation Développeur Web d'<a class="link" href="https://openclassrooms.com/fr/" target="_blank">OpenClassrooms</a>.</p>
                                 <p class="cards-description">Il a pour but de développer les compétences HTML et CSS des étudiants, tout en leur fournissant un projet pour leur portfolio.</p>
-                                <p class="cards-description">On m'a donné deux images en format SVG (1440px et 375px de largeur), et mon but était de reproduire le plus fidèlement possible les maquettes, en respectant les contraintes et demandes délivrées par l'organisme de formation.<br/>
-                                (Vous pourrez trouver la liste dans la description du repository Git, accessible via l'icone juste en bas.)</p>
+                                <p class="cards-description">Booki est un site de réservation d'hébergements et activités disponibles dans le monde entier.</p>
                                 <div class="icons-description center">
                                     <a href="https://github.com/Alexioos95/P2" target="_blank" title="Voir le Code sur GitHub">
                                         <i class="fa-brands fa-github"></i>
@@ -96,9 +95,8 @@
                         <article id="slide-2" class="center">
                             <img class="object-fit" src="images/NFT.png" alt="Site NFT Equilibrium, challenge FrontEndMentor"/>
                             <div class="cards-text">
-                                <h2>Carte NFT Equilibrium</h2>
-                                <p class="cards-description">La carte NFT Equilibrium est l'un des challenges de <a class="link" href="https://www.frontendmentor.io/" target="_blank">FrontEndMentor</a>, un site d'entraînement au développement web.<br/>
-                                <p class="cards-description">Le concept est simple : On nous fourni les images, police d'écritures et couleurs utilisées, une image en PNG de ce qui est supposé être le résultat final, puis on nous met au défi de se rapprocher le plus possible de l'image.</p>
+                                <h2 class="h2-cards">Carte NFT Equilibrium</h2>
+                                <p class="cards-description">La carte NFT Equilibrium est l'un des challenges de <a class="link" href="https://www.frontendmentor.io/" target="_blank">FrontEndMentor</a>, un site d'entraînement à l'intégration web.</p>
                                 <div class="icons-description center">
                                     <a href="https://github.com/Alexioos95/FEM-2" target="_blank" title="Voir le Code sur GitHub">
                                         <i class="fa-brands fa-github"></i>
@@ -117,7 +115,7 @@
                         <article id="slide-3" class="center">
                             <img class="object-fit" src="images/QRCode.png" alt="Site QR Code, challenge FrontEndMentor"/>
                             <div class="cards-text">
-                                <h2>Carte QR Code</h2>
+                                <h2 class="h2-cards">Carte QR Code</h2>
                                 <p class="cards-description">La carte QR Code est également l'un des challenges de <a class="link" href="https://www.frontendmentor.io/" target="_blank">FrontEndMentor</a>.<br/>
                                 <div class="icons-description center">
                                     <a href="https://github.com/Alexioos95/FEM-1_2" target="_blank" title="Voir le Code sur GitHub">
@@ -137,7 +135,7 @@
             </div>
         </main>
         
-        <footer class="container container-tablet">
+        <footer class="container container-phone">
             <span>Alexis Payen</span>
             <span>2022</span>
         </footer>

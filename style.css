@@ -68,16 +68,16 @@ li {
     transform-origin: 0% 50%;
 }
 /** DESCRIPTION **/
-.description {
+.index-description {
     flex-direction: column;
     align-items: flex-start;
     font-family: "Philosopher", sans-serif;
 }
-.description p {
+.index-description p {
     margin: 5px 0px;
 }
 /** CONTACT BUTTONS **/
-.contact {
+.index-contact {
     justify-content: space-between;
     margin-top: 20px;
 }
@@ -175,7 +175,7 @@ article {
 .image-booki {
     object-position: top left;
 }
-h2, .cards-description {
+.h2-cards, .cards-description {
     margin-bottom: 0px;
 }
 .cards-text {
@@ -184,7 +184,7 @@ h2, .cards-description {
     width: 50%;
     padding: 10px 40px;
 }
-h2 {
+.h2-cards {
     text-align: center;
 }
 .icons-description {
@@ -205,46 +205,92 @@ footer span {
 }
 
 /** PAGE CV **/
-
 .download {
     display: flex;
     align-items: center;
     gap: 15px;
+    margin: 20px 0px;
     padding: 0px 15px;
     border-radius: 30px;
     background: rgb(215, 209, 209);
 }
+/** CV **/
+/** UPPER PART - PHOTO + TITLES + CONTACTS **/
+section {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 36px;
+    background: rgb(27, 79, 82);
+    font-family: "Poppins", arial, sans-serif;
+    color: white;
+}
+.cv-photo-titles {
+    display: flex;
+    justify-content: space-between;
+}
+.cv-titles {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+section img {
+    height: 155px;
+    width: 155px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+section h1 {
+    font-family: "Poppins", arial, sans-serif;
+    font-size: 63px;
+    font-weight: bold;
+    color:rgb(255, 209, 25);
+    word-spacing: 10px;
+}
+section h2 {
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 14px;
+    word-spacing: 4px;
+    margin: 2px -13px 0px 0px;
+}
+.cv-wrap-contact {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    gap: 5%;
+    height: 22px;
+    margin-top: 35px;
+}
+.cv-contact {
+    display: flex;
+    flex: 0 0 30%;
+    align-items: flex-end;
+    height: 100%;
+}
+section span {
+    padding-left: 5px;
+    font-size: 15px;
+    font-weight: 200;
+}
 
 
-
-/** MEDIA QUERY BIG PHONES/SMALL TABLETS **/
-@media screen and (max-width: 768px) {
-/** GENERAL **/
-    .container-tablet {
-        max-width: 1440px;
-        margin: auto;
-        padding: 0;
-    }
-    .upper-div {
-        padding: 0px 20px;
+/** MEDIA QUERY TABLET **/
+@media screen and (max-width: 1024px) {
+    body {
+        background: red;
     }
 /** CONTACT **/
-    .contact {
+    .index-contact {
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 2.3%;
     }
-    .contact a {
-        flex: 1 1 30%;
+    .index-contact a {
+        flex: 1 1 20%;
     }
     .button {
         justify-content: center;
         gap: 3%;
-        margin-bottom: 5px;
         width: 100%;
-    }
-    .button-git {
-        display: none;
     }
     .text-phone, .button:hover .icon-before-hover {
         display: initial;
@@ -252,11 +298,30 @@ footer span {
     .button:hover .text-after-hover {
         display: none;
     }
+}
+
+/** MEDIA QUERY PHONES **/
+@media screen and (max-width: 768px) {
+/** GENERAL **/
+    .container {
+        max-width: 800px;
+        padding: 0; 
+        margin: auto;
+    }
+/** UPPER DIV **/
+    .upper-div {
+        padding: 0px 20px;
+    }
+/** CONTACT **/
+    .index-contact {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
 /** SLIDER PORTFOLIO **/
     .slider {
         width: 100%;
         height: 100vh;
-        padding: 0;
         border-radius: 0;
     }
 /** CARDS PORTFOLIO **/
@@ -266,7 +331,7 @@ footer span {
         height: 100vh;
     }
     .object-fit {
-        height: 33%;
+        height: 40%;
         width: 100%;
         object-position: 50% 30%;
     }
@@ -274,40 +339,10 @@ footer span {
         object-position: top left;
     }
     .cards-text {
-        height: 67%;
+        height: 60%;
         width: 100%;
     }
     .cards-description {
-        margin-top: 5px;
-        font-size: 1rem;
-    }
-}
-
-/** MEDIA QUERY PHONES **/
-@media screen and (max-width: 547px) {
-/** GENERAL **/
-    body {
-        background: white;
-    }
-/** CONTACT **/
-    .contact {
-        flex-direction: column;
-        align-items: stretch;
-    }
-    .button {
-        width: 100%;
-    }
-    .button-git {
-        display: flex;
-    }
-/** SLIDER PORTFOLIO **/
-    .slider {
-        height: 105vh;
-    }
-    article {
-        height: 105vh;
-    }
-    .image-booki {
-        object-position: top left;
+        margin-top: 8px;
     }
 }
