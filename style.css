@@ -158,11 +158,11 @@ article {
     border: solid black;
     border-width: 0px 4px 4px 0px;
 }
-.slide-prev {
+.arrow-prev {
     transform: rotate(135deg);
     left: 2%;
 }
-.slide-next {
+.arrow-next {
     transform: rotate(-45deg);
     right: 2%;
 }
@@ -189,7 +189,7 @@ article {
 }
 .icons-description {
     font-size: 25px;
-    margin-top: 20px;
+    margin-top: 15px;
     gap: 20px; 
 }
 .image-www {
@@ -253,6 +253,7 @@ section h2 {
     word-spacing: 4px;
     margin: 2px -13px 0px 0px;
 }
+/** CV CONTACT **/
 .cv-wrap-contact {
     display: flex;
     flex-wrap: wrap-reverse;
@@ -270,6 +271,20 @@ section span {
     padding-left: 5px;
     font-size: 15px;
     font-weight: 200;
+}
+section .fa-linkedin-in {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    height: 20px;
+    width: 20px;
+    background: rgb(74, 134, 197);
+    border-radius: 100%;
+}
+section a {
+    color: white;
+    text-decoration: underline;
 }
 
 
