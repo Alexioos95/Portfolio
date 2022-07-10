@@ -209,17 +209,16 @@ footer span {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin: 20px 0px;
+    margin: 20px 0px 36px 0px;
     padding: 0px 15px;
     border-radius: 30px;
     background: rgb(215, 209, 209);
 }
 /** CV **/
 /** UPPER PART - PHOTO + TITLES + CONTACTS **/
-section {
-    max-width: 800px;
-    margin: auto;
-    padding: 20px 36px;
+.cv-header {
+    margin-bottom: 48px;
+    padding: 18px 34px;
     background: rgb(27, 79, 82);
     font-family: "Poppins", arial, sans-serif;
     color: white;
@@ -234,24 +233,24 @@ section {
     align-items: flex-end;
 }
 section img {
-    height: 155px;
-    width: 155px;
+    height: 148px;
+    width: 148px;
     object-fit: cover;
     border-radius: 100%;
 }
 section h1 {
     font-family: "Poppins", arial, sans-serif;
-    font-size: 63px;
+    font-size: 61px;
     font-weight: bold;
     color:rgb(255, 209, 25);
-    word-spacing: 10px;
+    word-spacing: 6px;
 }
 section h2 {
-    font-size: 27px;
+    font-size: 25px;
     font-weight: bold;
     letter-spacing: 14px;
-    word-spacing: 4px;
-    margin: 2px -13px 0px 0px;
+    word-spacing: -4px;
+    margin: 4px -13px 0px 0px;
 }
 /** CV CONTACT **/
 .cv-wrap-contact {
@@ -269,14 +268,14 @@ section h2 {
 }
 section span {
     padding-left: 5px;
-    font-size: 15px;
-    font-weight: 200;
+    font-size: 14px;
+    font-weight: 300;
 }
-section .fa-linkedin-in {
+.fa-linkedin-in {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 13px;
+    font-size: 12px;
     height: 20px;
     width: 20px;
     background: rgb(74, 134, 197);
