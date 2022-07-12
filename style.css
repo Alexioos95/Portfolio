@@ -55,7 +55,7 @@ li {
     border-bottom: solid 3px black;  
 }
 .li-not-active:after {
-  display:block;
+  display: block;
   content: "";
   border-bottom: solid 3px black;
   transform: scaleX(0);
@@ -68,20 +68,20 @@ li {
     transform-origin: 0% 50%;
 }
 /** DESCRIPTION **/
-.index-description {
+.description {
     flex-direction: column;
     align-items: flex-start;
     font-family: "Philosopher", sans-serif;
 }
-.index-description p {
+.description p {
     margin: 5px 0px;
 }
 /** CONTACT BUTTONS **/
-.index-contact {
+.contact {
     justify-content: space-between;
     margin-top: 20px;
 }
-.button {
+.contact-button {
     width: 155px;
     height: 40px;
     padding: 0px 3px;
@@ -90,7 +90,7 @@ li {
     z-index: 0;
     transition: all 0.3s ease;
 }
-.button:after {
+.contact-button:after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -100,29 +100,29 @@ li {
     height: 100%;
     background: white;
 }
-.button:hover:after {
+.contact-button:hover:after {
     width: 100%;
 }
-.text-after-hover, .text-phone, .button:hover .icon-before-hover {
+.text-after-hover, .text-phone, .contact-button:hover .icon-before-hover {
     display: none;
 }
-.button:hover .text-after-hover {
+.contact-button:hover .text-after-hover {
     display: initial;
 }
-.button-blue {
+.contact-button-blue {
     color: white;
     background: rgb(27, 79, 82);
     border: 2px solid rgb(27, 79, 82);
 }
-.button-blue:hover {
+.contact-button-blue:hover {
     color: rgb(27, 79, 82);
 }
-.button-yellow {
+.contact-button-yellow {
     color: black;
     background:rgb(255, 209, 25);
     border: 2px solid rgb(255, 209, 25);
 }
-.button-yellow:hover {
+.contact-button-yellow:hover {
     color: rgb(255, 209, 25);
 }
 /** SLIDER PORTFOLIO **/
@@ -141,7 +141,7 @@ li {
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
 }
-article {
+article { /** SLIDE **/
     height: 91vh;
     width: 100%;
     border-radius: 20px;
@@ -150,21 +150,43 @@ article {
     transform-origin: center center;
     scroll-snap-align: center;
 }
-.slide-arrow {
+.fa-circle-left {
     position: absolute;
-    top: 50%;
-    width: 13px;
-    height: 13px;
-    border: solid black;
-    border-width: 0px 4px 4px 0px;
-}
-.arrow-prev {
-    transform: rotate(135deg);
     left: 2%;
+    top: 50%;
+    font-size: 20px;
+    border-radius: 100%;
+    z-index: 0;
 }
-.arrow-next {
-    transform: rotate(-45deg);
+.fa-circle-left:after {
+    content: "";
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    top: 1px;
+    left: 3px;
+    background: white;
+    border-radius: 50%;
+    z-index: -1;
+}
+.fa-circle-right {
+    position: absolute;
     right: 2%;
+    top: 50%;
+    font-size: 20px;
+    border-radius: 20px;
+    z-index: 0;
+}
+.fa-circle-right:after {
+    content: "";
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    top: 1px;
+    left: 4px;
+    background: white;
+    border-radius: 50%;
+    z-index: -1;
 }
 /** CARDS PORTFOLIO **/
 .object-fit {
@@ -175,25 +197,26 @@ article {
 .image-booki {
     object-position: top left;
 }
-.h2-cards, .cards-description {
-    margin-bottom: 0px;
-}
 .cards-text {
     display: flex;
     flex-direction: column;
     width: 50%;
     padding: 10px 40px;
 }
-.h2-cards {
+h2 {
     text-align: center;
+    margin-bottom: 0px;
+}
+.cards-description {
+    margin-bottom: 0px;
 }
 .icons-description {
     font-size: 25px;
     margin-top: 15px;
     gap: 20px; 
 }
-.image-www {
-    margin-top: 8px;
+.fa-up-right-from-square {
+    font-size: 22px;
 }
 /** FOOTER **/
 footer {
@@ -203,21 +226,22 @@ footer {
 footer span {
     font-size: 13px;
 }
-
-/** PAGE CV **/
+/** CV PAGE **/
+/** DOWNLOAD BUTTON **/
+#CV {
+    margin-top: 5px;
+}
 .download {
     display: flex;
     align-items: center;
     gap: 15px;
-    margin: 20px 0px 36px 0px;
+    margin: 5px 0px 21px 0px;
     padding: 0px 15px;
     border-radius: 30px;
     background: rgb(215, 209, 209);
 }
-/** CV **/
-/** UPPER PART - PHOTO + TITLES + CONTACTS **/
+/** CV HEADER **/
 .cv-header {
-    margin-bottom: 48px;
     padding: 18px 34px;
     background: rgb(27, 79, 82);
     font-family: "Poppins", arial, sans-serif;
@@ -238,14 +262,15 @@ section img {
     object-fit: cover;
     border-radius: 100%;
 }
-section h1 {
+.cv-title {
     font-family: "Poppins", arial, sans-serif;
     font-size: 61px;
     font-weight: bold;
     color:rgb(255, 209, 25);
     word-spacing: 6px;
+    margin: 15px 0px
 }
-section h2 {
+.cv-subtitle {
     font-size: 25px;
     font-weight: bold;
     letter-spacing: 14px;
@@ -281,41 +306,98 @@ section span {
     background: rgb(74, 134, 197);
     border-radius: 100%;
 }
-section a {
+.white-link {
     color: white;
+    text-decoration: underline;
+}
+/** CV MAIN **/
+.cv-main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 29.280px 34px;
+    gap: 15px;
+    justify-content: space-between;
+}
+/** LONG SECTION (EXPERIENCES + FORMATIONS) **/
+.cv-long-section {
+    width: 69.5%;
+    background: red;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 22px;
+    height: 50px;
+    background:rgb(27, 79, 82);
+    margin: 0;
+}
+h4 {
+    padding-left: 6px;
+    color: rgb(27, 79, 82);
+    margin-top: 8px;
+    margin: 8px 0px -6px 0px;
+    font-size: 18px;
+}
+mark {
+    font-size: 12px;
+    color: rgb(27, 79, 82);
+    background: none;
+}
+.span-date {
+    padding: 0px 0px 0px 6px;
+    color: gray;
+    font-size: 16px;
+}
+li p {
+    padding-left: 6px;
+    margin: -5px 0px 0px 0px;
+    font-size: 16px;
+}
+aside {
+    width: 28.3%;
+    background: green;
+}
+h5 {
+    color: rgb(27, 79, 82);
+    font-size: 18px;
     text-decoration: underline;
 }
 
 
 /** MEDIA QUERY TABLET **/
 @media screen and (max-width: 1024px) {
-    body {
-        background: red;
+    BODY {
+        background-color: red;
     }
 /** CONTACT **/
-    .index-contact {
+    .contact {
         justify-content: space-between;
         flex-wrap: wrap;
         gap: 2.3%;
     }
-    .index-contact a {
+    .contact a {
         flex: 1 1 20%;
     }
-    .button {
+    .contact-button {
         justify-content: center;
         gap: 3%;
         width: 100%;
     }
-    .text-phone, .button:hover .icon-before-hover {
+    .text-phone, .contact-button:hover .icon-before-hover {
         display: initial;
     }
-    .button:hover .text-after-hover {
+    .contact-button:hover .text-after-hover {
         display: none;
     }
 }
 
 /** MEDIA QUERY PHONES **/
 @media screen and (max-width: 768px) {
+    BODY {
+        background-color: white;
+    }
 /** GENERAL **/
     .container {
         max-width: 800px;
@@ -327,7 +409,7 @@ section a {
         padding: 0px 20px;
     }
 /** CONTACT **/
-    .index-contact {
+    .contact {
         flex-direction: column;
         align-items: stretch;
         gap: 10px;
@@ -358,5 +440,61 @@ section a {
     }
     .cards-description {
         margin-top: 8px;
+    }
+/** CV PAGE **/
+/** CV HEADER **/
+    .cv-header {
+        padding: 10px;
+    }
+    section img {
+        width: 25vw;
+        height: 25vw;
+    }
+    .cv-titles {
+        align-items: center;
+    }
+    .cv-title {
+        text-align: center;
+        font-size: 8.5vw;
+        word-spacing: 0px;
+    }
+    .cv-subtitle {
+        letter-spacing: 0px;
+        word-spacing: 5px;
+        margin: 0;
+        font-size: 6vw;
+    }
+/** CV CONTACT **/
+    .cv-wrap-contact {
+        flex-direction: column;
+        margin-top: 10px;
+        height: 100%;
+    }
+    .cv-wrap-contact :nth-child(2) { order: 3; }
+    .cv-wrap-contact :nth-child(3) { order: 5; }
+    .cv-wrap-contact :nth-child(4) { order: 2; }
+    .cv-wrap-contact :nth-child(5) { order: 4; }
+    .cv-contact {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .fa-solid {
+        width: 20px;
+        display: flex;
+        justify-content: center;
+    }
+/** CV MAIN **/
+    .cv-main {
+        padding: 8px 0px;
+        gap: 8px;
+    }
+    .cv-long-section {
+        width: 100%;
+    }
+    h3 {
+        padding: 0px 5px;
+    }
+    aside {
+        width: 100%;
     }
 }

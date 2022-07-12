@@ -35,9 +35,10 @@
         </header>
 
         <div class="center container">
-            <a class="download" href="CV_Alexis_Payen.pdf">
+            
+            <a class="contact-button contact-button-blue center" href="https://www.linkedin.com/in/alexispayen/" target="_blank">
                 <i class="fa-solid fa-download"></i>
-                <p>Télécharger mon CV</p>
+                <span>Télécharger</span>
             </a>
         </div>
         <!--CV-->
@@ -46,10 +47,10 @@
             <section class="cv-header">
                 <!--PHOTO + TITLES-->
                 <div class="cv-photo-titles">
-                    <img src="images/Alexis.jpg" alt="Photo d'Alexis Payen"/>
+                    <img class="photo-alexis" src="images/Alexis.jpg" alt="Photo d'Alexis Payen"/>
                     <div class="cv-titles">
-                        <h1>ALEXIS PAYEN</h1>
-                        <h2>DÉVELOPPEUR WEB</h2>
+                        <h1 class="cv-title">ALEXIS PAYEN</h1>
+                        <h2 class="cv-subtitle">DÉVELOPPEUR WEB</h2>
                     </div>
                 </div>
                 <!--CONTACT-->
@@ -60,7 +61,7 @@
                     </div>
                     <div class="cv-contact">
                         <i class="fa-solid fa-laptop-code"></i>
-                        <a href="index.html"><span>AlexisPayen.com</span></a>
+                        <a class="white-link" href="index.html"><span>AlexisPayen.com</span></a>
                     </div>
                     <div class="cv-contact">
                         <i class="fa-solid fa-location-dot"></i>
@@ -73,19 +74,34 @@
                     </div>
                     <div class="cv-contact">
                         <i class="fa-brands fa-linkedin-in"></i>
-                        <a href="https://linkedin.com/in/alexispayen/" target="_blank"><span>Linkedin.com/in/AlexisPayen</span></a>
+                        <a class="white-link" href="https://linkedin.com/in/alexispayen/" target="_blank"><span>Linkedin.com/in/AlexisPayen</span></a>
                     </div>
                 </div>
             </section>
             <!--EXPERIENCES-->
-            <section class="cv-experiences">
+            <section class="cv-main">
                 <div class="cv-long-section">
                     <h3>Expériences Professionnelles</h3>
                     <ul>
                         <li>
                             <h4>Carrefour - Employé de Rayon (Zone Culture) <mark>Stage de 4 semaines</mark></h4>
-                            <span>Mars 2022 - Mars 2022</span>
+                            <span class="span-date">Mars 2022 - Mars 2022</span>
                             <p>Retour de livres, mise en rayons, facing, et mise en place d'anti-vols.</p>
+                        </li>
+                        <li>
+                            <h4>Les Restos du Coeur - Aide Sociale Alimentaire</h4>
+                            <span class="span-date">Février 2022 - Février 2022</span>
+                            <p>Manutention, tri et distribution de denrées alimentaires.</p>
+                        </li>
+                        <li>
+                            <h4>Eruditio <mark>Stage d'1 jour</mark></h4>
+                            <span class="span-date">Janvier 2022 - Janvier 2022</span>
+                            <p>Stage d'Observation : Développeur Web Wordpress.</p>
+                        </li>
+                        <li>
+                            <h4>La Croix Rouge - Aide Sociale Alimentaire</h4>
+                            <span class="span-date">Novembre 2021 - Novembre 2021</span>
+                            <p>Manutention, tri et distribution de denrées alimentaires.</p>
                         </li>
                     </ul>
                 </div>
@@ -94,24 +110,71 @@
                     <h3>Compétences</h3>
                     <ul>
                         <li>
-                            <span>HTML 5</span>
+                            <h5>Langages :</h5>
+                            <span>
+                                HTML 5<br/>
+                                CSS 3
+                            </span>
+                        </li>
+                    </ul>
+                    <ul>
+                        <li>
+                            <h5>Logiciels :</h5>
+                            <span>
+                                Git & GitHub<br/>
+                                Visual Studio Code<br/>
+                                Microsoft Office
+                            </span>
+                        </li>
+                    </ul>
+
+                    
+                    <ul>
+                        <li>
+                            <h5>Langues :</h5>
+                            <span>
+                                Anglais Niveau B1
+                            </span>
                         </li>
                     </ul>
                 </aside>
                 
                 <div class="cv-long-section">
-                    <h3>Expériences Professionnelles</h3>
+                    <h3>Formations et Diplômes</h3>
                     <ul>
                         <li>
-                            <h4>Carrefour - Employé de Rayon (Zone Culture) <mark>Stage de 4 semaines</mark></h4>
-                            <span>Mars 2022 - Mars 2022</span>
-                            <p>Retour de livres, mise en rayons, facing, et mise en place d'anti-vols.</p>
+                            <h4>OpenClassrooms - Prep'Appentissage Développeur Web</h4>
+                            <span class="span-date">Mai 2022 - Actuellement</span>
+                            <p>Début de formation Développeur Web (HTML/CSS), en partenariat avec l'E2C95 de Franconville.</p>
+                        </li>
+                        <li>
+                            <h4>Certificat du Parcours Citoyen</h4>
+                            <span>Mars 2022</span>
+                        </li>
+                        <li>
+                            <h4>École de la 2ème Chance 95</h4>
+                            <span class="span-date">Octobre 2022 - Mai 2022</span>
+                            <p>Accompagnement d'élaboration d'un projet professionnel.</p>
+                        </li>
+                        <li>
+                            <h4>Niveau Scolaire 3</h4>
+                            <span class="span-date">2014</span>
                         </li>
                     </ul>
                 </div>
 
                 <aside>
-                    
+                    <h3>Centres d'intérêts</h3>
+                    <ul>
+                        <li>
+                            <span>
+                                Informatique (Software)<br/>
+                                Animés<br/>
+                                Mangas<br/>
+                                Jeux-Vidéos
+                            </span>
+                        </li>
+                    </ul>
                 </aside>
             </section>
 
