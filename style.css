@@ -230,7 +230,10 @@ footer span {
 /** DOWNLOAD BUTTON **/
 .cv {
     margin-top: 5px;
+    margin-bottom: 150px;
     font-family: "Poppins", sans-serif;
+    max-height: 1044px;
+    overflow: hidden;
 }
 .download {
     display: flex;
@@ -315,17 +318,24 @@ section span {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 30px 18px;
     padding: 33px 34px;
 }
 /** LONG SECTION (EXPERIENCES + FORMATIONS) **/
 .cv-long-section {
-    width: 69.5%;
+    width: 69.1%;
+    }
+.cv-main-li {
+    padding-left: 6px;
+}
+.cv-main-li a {
+    text-decoration: underline;
 }
 h3 {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     color: white;
     font-size: 21px;
     height: 40px;
@@ -333,7 +343,6 @@ h3 {
     background:rgb(27, 79, 82);
 }
 h4 {
-    padding-left: 6px;
     margin: 8px 0px -4px 0px;
     font-size: 15px;
     color: rgb(27, 79, 82);
@@ -344,13 +353,12 @@ mark {
     background: none;
 }
 .span-date {
-    padding: 0px 0px 0px 6px;
+    padding: 0;
     color: gray;
     font-size: 15px;
     font-style: italic;
 }
 li p {
-    padding-left: 6px;
     margin: 0;
     margin-bottom: 15px;
     font-size: 13px;
@@ -358,20 +366,50 @@ li p {
 }
 aside {
     width: 28.3%;
-    background: green;
+}
+aside span {
+    padding: 0;
+    font-weight: 500;
 }
 h5 {
     color: rgb(27, 79, 82);
-    font-size: 18px;
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
     text-decoration: underline;
+    margin: 0;
 }
-
+.cv-footer {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    font-size: 207px;
+    color: rgb(27, 79, 82);
+    overflow: hidden;
+}
+.fa-star-left {
+    margin-left: -120px;
+}
+.fa-square {
+    margin-top: 71px;
+    width: 760px;
+    background: rgb(27, 79, 82);
+}
+.fa-star-right {
+    margin-right: -120px;
+}
+.footer-page-cv-phone {
+    display: none;
+}
+.footer-page-cv {
+    margin: auto;
+    margin-top: -112px;
+    max-width: 800px;
+    padding: 0px 20px;
+}
 
 /** MEDIA QUERY TABLET **/
 @media screen and (max-width: 1024px) {
-    BODY {
-        background-color: red;
-    }
 /** CONTACT **/
     .contact {
         justify-content: space-between;
@@ -392,13 +430,17 @@ h5 {
     .contact-button:hover .text-after-hover {
         display: none;
     }
+/** CV **/
+    .cv-long-section {
+        width: 68.9%;
+    }
+    h3 {
+        height: 45px;
+    }
 }
 
 /** MEDIA QUERY PHONES **/
 @media screen and (max-width: 768px) {
-    BODY {
-        background-color: white;
-    }
 /** GENERAL **/
     .container {
         max-width: 800px;
@@ -443,6 +485,16 @@ h5 {
         margin-top: 8px;
     }
 /** CV PAGE **/
+    .cv {
+        max-height: 100%;
+    }
+    .download-button {
+        background: gray;
+        border: none;
+        border-radius: 0;
+        position: fixed;
+        bottom: 0;
+    }
 /** CV HEADER **/
     .cv-header {
         padding: 10px;
@@ -492,10 +544,34 @@ h5 {
     .cv-long-section {
         width: 100%;
     }
+    .cv-main-li {
+        padding-left: 10px;
+    }
     h3 {
         padding: 0px 5px;
+        height: 55px;
     }
     aside {
         width: 100%;
+    }
+    .cv-long-section-ul {
+        padding-left: 10px;
+    }
+/** CV FOOTER **/
+    .cv-footer {
+        display: none;
+    }
+/** FOOTER **/
+    .footer-page-cv {
+        display: none;
+    }
+    .footer-page-cv-phone {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }
+    .footer-page-cv-phone span {
+        font-family: "EB Garamond", sans-serif;
+        font-size: 13px;
     }
 }
