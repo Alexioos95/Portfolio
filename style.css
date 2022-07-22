@@ -311,7 +311,7 @@ section span {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px 18px;
+    row-gap: 30px;
     padding: 33px 34px;
 }
 /** LONG SECTION (EXPERIENCES + FORMATIONS) **/
