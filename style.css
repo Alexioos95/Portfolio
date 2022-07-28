@@ -80,6 +80,48 @@ li {
 .description p {
     margin: 5px 0px;
 }
+.technos {
+    display: flex;
+    flex-wrap: wrap;
+}
+.technos li {
+    font-size: 18px;
+    width: 48%;
+    display: flex;
+    gap: 5px;
+}
+.fa-html5, .fa-git-alt {
+    color: orangered;
+}
+.fa-css3 {
+    color: blue;
+}
+.fa-sass {
+    color: palevioletred;
+}
+.fa-js {
+    display: flex;
+    color: yellow;
+}
+.fa-js:after {
+    content: "";
+    background: black;
+    height: 12px;
+    width: 12px;
+    position: relative;
+    top: 5px;
+    left: -12px;
+    z-index: -1;
+}
+.fa-node, .fa-envira {
+    color: green;
+}
+.fa-shield {
+    color: gray;
+}
+.fa-react {
+    color: rgb(114, 180, 202)
+}
 /** CONTACT BUTTONS **/
 .contact {
     justify-content: space-between;
@@ -441,6 +483,9 @@ h5 {
 /** UPPER DIV **/
     .upper-div {
         padding: 0px 20px;
+    }
+    .technos li {
+        width: 100%;
     }
 /** CONTACT **/
     .contact {
