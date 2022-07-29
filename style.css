@@ -85,10 +85,11 @@ li {
     flex-wrap: wrap;
 }
 .technos li {
-    font-size: 18px;
-    width: 48%;
     display: flex;
     gap: 5px;
+    align-items: center;
+    font-size: 18px;
+    width: 48%;
 }
 .fa-html5, .fa-git-alt {
     color: orangered;
@@ -98,6 +99,9 @@ li {
 }
 .fa-sass {
     color: palevioletred;
+}
+.fa-arrow-up-right-dots {
+    font-size: 15px;
 }
 .fa-js {
     display: flex;
