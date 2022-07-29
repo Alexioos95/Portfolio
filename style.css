@@ -109,8 +109,8 @@ li {
     height: 12px;
     width: 12px;
     position: relative;
-    top: 5px;
-    left: -12px;
+    top: 4px;
+    left: -13px;
     z-index: -1;
 }
 .fa-node, .fa-envira {
