@@ -280,7 +280,7 @@ footer span {
 .cv {
     margin: 5px auto 150px auto;
     font-family: "Poppins", sans-serif;
-    max-height: 1044px;
+    max-height: 1175px;
     overflow: hidden;
 }
 /** DOWNLOAD BUTTON **/
@@ -310,24 +310,24 @@ section img {
 }
 .cv-title {
     font-family: "Poppins", arial, sans-serif;
-    font-size: 61px;
+    font-size: 39px;
     font-weight: bold;
     color:rgb(255, 209, 25);
+    text-align: end;
     word-spacing: 6px;
     margin: 15px 0px
 }
 .cv-subtitle {
-    font-size: 25px;
+    font-size: 31px;
     font-weight: bold;
-    letter-spacing: 14px;
-    word-spacing: -4px;
+    letter-spacing: 10px;
     margin: 4px -13px 0px 0px;
 }
 /** CV CONTACT **/
 .cv-wrap-contact {
     display: flex;
     flex-wrap: wrap-reverse;
-    gap: 5%;
+    gap: 4%;
     height: 22px;
     margin-top: 35px;
 }
@@ -357,18 +357,31 @@ section span {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 30px;
+    row-gap: 5px;
     padding: 33px 34px;
 }
 /** LONG SECTION (EXPERIENCES + FORMATIONS) **/
 .cv-long-section {
-    width: 69.1%;
+    width: 63%;
     }
 .cv-main-ul {
     padding-left: 6px;
 }
 .cv-main-ul a {
     text-decoration: underline;
+}
+.cv-main-ul-competences {   
+    padding: 0;
+    margin-left: 16px;
+}
+.during {
+    font-size: 13px;
+    font-weight: 400;
+}
+.cv-main-competences {
+    font-size: 13px;
+    font-weight: 400;
+    list-style: disc;
 }
 h3 {
     display: flex;
@@ -386,16 +399,10 @@ h4 {
     font-size: 15px;
     color: rgb(27, 79, 82);
 }
-mark {
-    font-size: 11px;
-    color: rgb(27, 79, 82);
-    background: none;
-}
 .span-date {
     padding: 0;
     color: gray;
     font-size: 15px;
-    font-style: italic;
 }
 li p {
     margin: 0px 0px 15px 0px;
@@ -403,7 +410,7 @@ li p {
     font-weight: 400;
 }
 aside {
-    width: 28.3%;
+    width: 35%;
 }
 aside span {
     padding: 0;
@@ -422,7 +429,7 @@ h5 {
     justify-content: center;
     font-size: 207px;
     color: rgb(27, 79, 82);
-    margin-top: 0;
+    margin-top: -107px;
     overflow: hidden;
 }
 .fa-star-left {
@@ -468,8 +475,11 @@ h5 {
         display: none;
     }
 /** CV **/
+    .cv {
+        max-height: 1190px;
+    }
     .cv-long-section {
-        width: 68.9%;
+        width: 62.9%;
     }
     h3 {
         height: 45px;
@@ -586,6 +596,12 @@ h5 {
         width: 100%;
     }
     .cv-main-ul {
+        padding-left: 10px;
+    }
+    .cv-main-ul-competences {
+        padding-left: 10px;
+    }
+    .during {
         padding-left: 10px;
     }
     h3 {
