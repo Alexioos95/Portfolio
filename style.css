@@ -280,7 +280,7 @@ footer span {
 .cv {
     margin: 5px auto 150px auto;
     font-family: "Poppins", sans-serif;
-    max-height: 1175px;
+    max-height: 1145px;
     overflow: hidden;
 }
 /** DOWNLOAD BUTTON **/
@@ -363,25 +363,12 @@ section span {
 /** LONG SECTION (EXPERIENCES + FORMATIONS) **/
 .cv-long-section {
     width: 63%;
-    }
+}
 .cv-main-ul {
     padding-left: 6px;
 }
 .cv-main-ul a {
     text-decoration: underline;
-}
-.cv-main-ul-competences {   
-    padding: 0;
-    margin-left: 16px;
-}
-.during {
-    font-size: 13px;
-    font-weight: 400;
-}
-.cv-main-competences {
-    font-size: 13px;
-    font-weight: 400;
-    list-style: disc;
 }
 h3 {
     display: flex;
@@ -412,17 +399,25 @@ li p {
 aside {
     width: 35%;
 }
+aside ul {
+    padding-left: 17px;
+}
+aside ul li {
+    font-size: 13px;
+    font-weight: 500;
+    list-style: disc;
+}
 aside span {
     padding: 0;
     font-weight: 500;
 }
-h5 {
-    color: rgb(27, 79, 82);
-    font-size: 15px;
-    font-weight: 400;
+aside h4 {
     font-style: italic;
     text-decoration: underline;
     margin: 0;
+}
+.list-style-none {
+    list-style: none;
 }
 .cv-footer {
     display: flex;
@@ -476,7 +471,7 @@ h5 {
     }
 /** CV **/
     .cv {
-        max-height: 1190px;
+        max-height: 1170px;
     }
     .cv-long-section {
         width: 62.9%;
@@ -596,12 +591,6 @@ h5 {
         width: 100%;
     }
     .cv-main-ul {
-        padding-left: 10px;
-    }
-    .cv-main-ul-competences {
-        padding-left: 10px;
-    }
-    .during {
         padding-left: 10px;
     }
     h3 {
