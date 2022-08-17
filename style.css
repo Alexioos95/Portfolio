@@ -280,7 +280,7 @@ footer span {
 .cv {
     margin: 5px auto 150px auto;
     font-family: "Poppins", sans-serif;
-    max-height: 1145px;
+    max-height: 1135px;
     overflow: hidden;
 }
 /** DOWNLOAD BUTTON **/
@@ -360,16 +360,6 @@ section span {
     row-gap: 5px;
     padding: 33px 34px;
 }
-/** LONG SECTION (EXPERIENCES + FORMATIONS) **/
-.cv-long-section {
-    width: 63%;
-}
-.cv-main-ul {
-    padding-left: 6px;
-}
-.cv-main-ul a {
-    text-decoration: underline;
-}
 h3 {
     display: flex;
     justify-content: center;
@@ -381,6 +371,12 @@ h3 {
     margin: 0;
     background:rgb(27, 79, 82);
 }
+.cv-long-section {
+    width: 59%;
+}
+aside {
+    width: 39%;
+}
 h4 {
     margin: 8px 0px -4px 0px;
     font-size: 15px;
@@ -389,35 +385,30 @@ h4 {
 .span-date {
     padding: 0;
     color: gray;
-    font-size: 15px;
+    font-size: 14px;
 }
 li p {
     margin: 0px 0px 15px 0px;
     font-size: 13px;
     font-weight: 400;
 }
-aside {
-    width: 35%;
+aside a {
+    text-decoration: underline;
 }
-aside ul {
-    padding-left: 17px;
-}
-aside ul li {
+aside li {
     font-size: 13px;
     font-weight: 500;
-    list-style: disc;
 }
 aside span {
     padding: 0;
     font-weight: 500;
 }
 aside h4 {
-    font-style: italic;
-    text-decoration: underline;
     margin: 0;
 }
-.list-style-none {
-    list-style: none;
+.li-right {
+    margin: 0px 0px -32px 46%;
+    white-space: nowrap;
 }
 .cv-footer {
     display: flex;
@@ -446,6 +437,21 @@ aside h4 {
     margin: -112px auto 0px auto;
     padding: 0px 20px;
 }
+.cv-main-competences li {
+    list-style: disc;
+    margin-left: 18px;
+    font-size: 15px;
+    color: rgb(27, 79, 82);
+}
+.cv-main-competences + span {
+    padding: 0;
+    color: rgb(27, 79, 82);
+    font-weight: 700;
+}
+.cv-main-technologies h4 {
+    font-style: italic;
+    text-decoration: underline;
+}
 
 /** MEDIA QUERY TABLET **/
 @media screen and (max-width: 1024px) {
@@ -471,10 +477,7 @@ aside h4 {
     }
 /** CV **/
     .cv {
-        max-height: 1170px;
-    }
-    .cv-long-section {
-        width: 62.9%;
+        max-height: 1165px;
     }
     h3 {
         height: 45px;
@@ -590,9 +593,6 @@ aside h4 {
     .cv-long-section {
         width: 100%;
     }
-    .cv-main-ul {
-        padding-left: 10px;
-    }
     h3 {
         padding: 0px 5px;
         height: 55px;
@@ -600,8 +600,11 @@ aside h4 {
     aside {
         width: 100%;
     }
-    .cv-long-section-ul {
-        padding-left: 10px;
+    li {
+        padding: 0px 10px 0px 10px;
+    }
+    .li-right {
+        margin: auto;
     }
 /** CV FOOTER **/
     .cv-footer {
