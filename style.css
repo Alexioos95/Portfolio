@@ -63,13 +63,11 @@ li {
     content: "";
     border-bottom: solid 3px black;
     transform: scaleX(0);
+    transform-origin: 0% 50%;
     transition: all ease-in-out 0.2s;
 }
 .li-not-active:hover:after {
     transform: scaleX(1);
-}
-.li-not-active:after {
-    transform-origin: 0% 50%;
 }
 /** DESCRIPTION **/
 .description {
@@ -80,16 +78,16 @@ li {
 .description p {
     margin: 5px 0px;
 }
-.technos {
+.list-techno {
     display: flex;
     flex-wrap: wrap;
 }
-.technos li {
+.list-techno li {
     display: flex;
-    gap: 5px;
     align-items: center;
-    font-size: 18px;
+    gap: 5px;
     width: 48%;
+    font-size: 18px;
 }
 .fa-html5, .fa-git-alt {
     color: orangered;
@@ -448,9 +446,14 @@ aside h4 {
     color: rgb(27, 79, 82);
     font-weight: 700;
 }
-.cv-main-technologies h4 {
+.cv-main-techno h4 {
     font-style: italic;
     text-decoration: underline;
+}
+.interet li {
+    list-style: disc;
+    margin-left: 16px;
+    font-size: 14px;
 }
 
 /** MEDIA QUERY TABLET **/
@@ -481,6 +484,9 @@ aside h4 {
     }
     h3 {
         height: 45px;
+    }
+    .li-right {
+        margin: auto;
     }
 }
 
@@ -602,9 +608,6 @@ aside h4 {
     }
     li {
         padding: 0px 10px 0px 10px;
-    }
-    .li-right {
-        margin: auto;
     }
 /** CV FOOTER **/
     .cv-footer {
