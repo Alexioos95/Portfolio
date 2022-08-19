@@ -609,6 +609,9 @@ aside h4 {
     li {
         padding: 0px 10px 0px 10px;
     }
+    .cv-main-competences li, .interet li {
+        margin-left: 0;
+    }
 /** CV FOOTER **/
     .cv-footer {
         display: none;
