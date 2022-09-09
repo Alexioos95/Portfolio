@@ -4,6 +4,8 @@
 }
 body {
     font-family: "EB Garamond", sans-serif;
+    background: rgb(236, 236, 236);
+    color: #222;
 }
 .container {
     max-width: 800px;
@@ -264,7 +266,7 @@ h2 {
     gap: 20px; 
 }
 .fa-up-right-from-square {
-    font-size: 22px;
+    font-size: 25px;
 }
 /** FOOTER **/
 footer {
@@ -284,6 +286,7 @@ footer span {
 /** DOWNLOAD BUTTON **/
 .download-button {
     gap: 15px;
+    margin-top: 8px;
 }
 /** CV HEADER **/
 .cv-header {
@@ -480,7 +483,7 @@ aside h4 {
     }
 /** CV **/
     .cv {
-        max-height: 1165px;
+        max-height: 1185px;
     }
     h3 {
         height: 45px;
