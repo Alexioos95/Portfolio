@@ -72,12 +72,15 @@ li {
     transform: scaleX(1);
 }
 /** DESCRIPTION **/
-.description {
+.description, .description-site {
     flex-direction: column;
     align-items: flex-start;
     font-family: "Philosopher", sans-serif;
 }
-.description p {
+.description-site {
+    margin-top: 15px;
+}
+.description p, .description-site p {
     margin: 5px 0px;
 }
 .list-techno {
@@ -146,7 +149,7 @@ li {
     position: absolute;
     left: 0;
     width: 0;
-    background: white;
+    background: rgb(236, 236, 236);
     z-index: -1;
     transition: all 0.3s ease;
 }
@@ -160,7 +163,7 @@ li {
     display: initial;
 }
 .contact-button-blue {
-    color: white;
+    color: rgb(236, 236, 236);
     background: rgb(27, 79, 82);
     border: 2px solid rgb(27, 79, 82);
 }
@@ -173,7 +176,7 @@ li {
     border: 2px solid rgb(255, 209, 25);
 }
 .contact-button-yellow:hover {
-    color: rgb(255, 209, 25);
+    color: rgb(110 110 40);
 }
 /** SLIDER PORTFOLIO **/
 .portfolio {
@@ -280,7 +283,7 @@ footer span {
 .cv {
     margin: 5px auto 150px auto;
     font-family: "Poppins", sans-serif;
-    max-height: 1135px;
+    max-height: 1115px;
     overflow: hidden;
 }
 /** DOWNLOAD BUTTON **/
@@ -302,6 +305,7 @@ footer span {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    justify-content: center;
 }
 section img {
     height: 148px;
@@ -316,10 +320,10 @@ section img {
     color:rgb(255, 209, 25);
     text-align: end;
     word-spacing: 6px;
-    margin: 15px 0px
+    margin: 15px 0px 0px 0px;
 }
 .cv-subtitle {
-    font-size: 31px;
+    font-size: 35px;
     font-weight: bold;
     letter-spacing: 10px;
     margin: 4px -13px 0px 0px;
@@ -358,7 +362,7 @@ section span {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    row-gap: 5px;
+    row-gap: 10px;
     padding: 33px 34px;
 }
 h3 {
